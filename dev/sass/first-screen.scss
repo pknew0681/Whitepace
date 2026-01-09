@@ -3,17 +3,13 @@
 
 .example {
     text-align: center;
-
-    h1 {
-        font-size: 128px;
-        margin: 0;
-    }
+    color: variables.$text-color-dark;
 
     figure {
         margin: 48px auto 24px;
         width: 100%;
         max-width: 280px;
-        background: variables.$bg-accent-color;
+        background: variables.$bg-color;
         padding: 12px;
     }
 }

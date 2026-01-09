@@ -9,17 +9,19 @@
 }
 
 html {
+    font-size: variables.$font-size-base;
+    font-family: variables.$font-primary;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%; // iOS
 }
 
 body {
     min-height: 100vh;
-    line-height: 1.5;
+    line-height: 1;
     text-rendering: optimizeSpeed;
     font-size: variables.$font-size-base;
     background: variables.$bg-color;
-    color: variables.$text-color;
+    color: variables.$text-color-light;
     display: flex;
     flex-direction: column;
 }
@@ -66,33 +68,30 @@ h4,
 h5,
 h6 {
     font-weight: 800;
-    color: variables.$primary-color;
+    color: variables.$text-color-dark;
     margin-bottom: 1em;
 }
 
 h1 {
-    font-size: variables.$h1-font-size;
+    font-size: 4.5rem;
 }
 
 h2 {
-    font-size: variables.$h2-font-size;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: variables.$h3-font-size;
+    font-size: 3.375rem;
 }
 
 h4 {
-    font-size: variables.$h4-font-size;
+    font-size: 2.25rem;
 }
 
 h5 {
-    font-size: variables.$h5-font-size;
+    font-size: 1.75rem;
 }
 
-h6 {
-    font-size: variables.$h6-font-size;
-}
 
 p {
     margin-top: 0;
@@ -104,6 +103,5 @@ footer {
 }
 
 ::selection {
-    background-color: variables.$font-primary;
-    color: variables.$font-secondary;
+    background-color: variables.$primary-color-light;
 }

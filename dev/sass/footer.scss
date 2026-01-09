@@ -2,10 +2,10 @@
 
 footer {
     height: 96px;
-    background: variables.$bg-accent-color;
+    background: variables.$bg-color;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 0 12px;
-    color: variables.$primary-hover-color
+    color: variables.$text-color-dark;
 }
