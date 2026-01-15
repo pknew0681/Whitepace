@@ -98,6 +98,50 @@ p {
     margin-bottom: 1rem;
 }
 
+.container{
+    max-width: 1544px;
+    padding: 0 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 24px;
+    background: transparent;
+    color: variables.$text-color-light;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none; 
+
+    &:hover{
+        opacity: .9;
+    }
+
+    &.btn-primary{
+        background: variables.$primary-color-light;
+
+        &.btn-arrow{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+
+    &.btn-secondary{
+        background: variables.$secondary-color-accent;
+        color: variables.$primary-color-dark
+    }
+}
+
+.scroll-stop{
+    overflow: hidden;
+}
+
 footer {
     margin-top: auto;
 }

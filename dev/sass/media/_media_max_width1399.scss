@@ -1,0 +1,10 @@
+@use "../../sass/variables";
+
+@media screen and (max-width: 1399px) {
+    .header{
+        > .container{
+            gap: 30px
+        }
+    }
+}
+

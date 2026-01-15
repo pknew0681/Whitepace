@@ -1,10 +1,175 @@
 @use "variables";
 
-header {
-	display: flex;
-	align-items: center;
-	height: 60px;
-	padding: 15px 12px;
-	background: variables.$bg-color;
-	color: variables.$text-color-dark;
+.header {
+	background: variables.$primary-color-dark;
+	padding: 16px 0; 
+	
+	> .container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 60px
+	}
+
+	&-logo {
+		min-width: 169px;
+	}
+
+	.mobile-container {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		gap: 60px
+	}
+
+	.menu{
+
+		&__list {
+			display: flex;
+			align-items: center;
+			gap: 32px;
+		}
+
+		&__item {
+			position: relative;
+			display: flex;
+			align-items: center;
+			padding: 5px 0;
+			gap: 10px;
+			
+			svg{
+				width: 29px;
+				height: 24px;
+			}
+
+			&:hover{
+				transition: 3s;
+				.menu__link{
+					color: #FFE492;
+				}
+
+				svg{
+					transform: rotate(180deg);
+				}
+
+				.arw-down{
+					color:#FFE492;
+				}
+
+				.menu-dropdown {
+					display: block;
+				}
+			}
+		}
+
+		&__link {
+			display: flex;
+			align-items: center;
+			text-align: center;
+			gap: 10px;
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 18px;
+			font-family: variables.$font-secondary;
+			transition: .3s;
+		}
+
+		&-dropdown {
+			display: none;
+			position: absolute;
+			top: 35px;
+			left: -20px;
+			border-radius: 8px;
+			padding: 20px 15px;
+			background: variables.$bg-color;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.159);
+
+			&__item{
+				padding-top: 10px;
+				padding-bottom: 7px;
+				border-bottom: 1px solid #c7bebe;
+
+				&:first-child{
+					padding-top: 0;
+				}
+			}
+
+			&__link{
+				display: flex;
+				font-size: 18px;
+				text-decoration: none;
+				padding: 0 7px;
+				font-family: variables.$font-secondary;
+				color: variables.$text-color-dark;
+				transition: .3s all ease;
+
+				&:hover{
+					color: variables.$secondary-color-accent;
+				}
+			}
+		}
+
+		&-buttons {
+			display: none;
+			align-items: center;
+			gap: 24px;
+		}
+	}
+
+	.header-buttons {
+		@extend .menu-buttons;
+		display: flex;
+	}
+	
+	.arw-down{
+		color:#ffffff;
+	}
+
+	.btn-burger{
+		display: none;
+		padding: 0;
+		width: 42px;
+		height: 24px;
+		position : relative;
+		background: none;
+		border: none;
+		transition: .3s;
+
+		span{
+			display: inline-block;
+			height: 2px;
+			width: 100%;
+			background: #FFFFFF;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: .3s;
+
+			&:nth-child(2){
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			&:nth-child(3){
+				top: 100%;
+				transform: translateY(-100%);
+			}
+		}
+
+		&.active{
+			span{
+				top: 50%;
+				transform: translateY(-50%) rotate(45deg);
+
+				&:nth-child(2){
+					transform: rotate(-45deg);
+				}
+
+				&:last-child{
+					opacity: 0;
+				}
+			}
+		}
+		
+	}
 }

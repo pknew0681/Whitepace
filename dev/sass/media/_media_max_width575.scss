@@ -1,5 +1,21 @@
 @use "../../sass/variables";
 
 @media screen and (max-width: 575px) {
-    
+    .header{
+        &-logo{
+            img{
+                max-width: 134px;
+            }
+        }
+
+        .mobile-container{
+            top: 55px;
+            gap: 30px;
+        }
+
+        .menu__list{
+            gap: 22px
+        }
+
+    }
 }
