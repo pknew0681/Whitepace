@@ -18,4 +18,16 @@
         }
 
     }
+
+    .footer{
+        &-logo{
+            img{
+                content: url("./assets/img/logo.svg");
+            }
+        }
+
+        #try-btn{
+            font-size: 18px;
+        }
+    }
 }

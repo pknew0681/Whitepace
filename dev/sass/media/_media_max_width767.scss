@@ -18,4 +18,26 @@
             top: 65px;
         }
     }
+
+    .footer{
+        &-row, &-col, &-nav{
+            align-items: center;
+        }
+
+        &-row{
+            margin-bottom: 80px;
+            gap: 80px;
+        }
+
+        &-bottom{
+            &__list{
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        &-contacts{
+            margin: 0 auto;
+        }
+    }
 }

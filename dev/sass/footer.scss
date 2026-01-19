@@ -1,11 +1,206 @@
 @use "variables";
 
-footer {
-    height: 96px;
-    background: variables.$bg-color;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 12px;
-    color: variables.$text-color-dark;
+.footer{
+    margin-top: auto;
+    background-color: variables.$primary-color-dark;
+    padding: 140px 0 32px;
+    font-family: "Inter", sans-serif;
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 67px;
+        gap: 45px;
+    }
+
+    &-col {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+    }
+
+    &-description {
+        max-width: 240px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    &-logo {
+        margin-bottom: 15px;
+    }
+
+    &-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &__link {
+            text-decoration: none;
+            color: variables.$text-color-light;
+            transition: color .3s;
+
+            &:hover {
+                color: variables.$secondary-color-accent;
+            }
+        }
+        
+    }
+
+    #try-btn{
+        font-size: 16px;
+    }
+
+    .try-title {
+        color: variables.$text-color-light;
+        margin-bottom: 23px;
+    }
+
+    .try-description {
+        max-width: 259px;
+        width: 100%;
+        margin-bottom: 23px;
+        font-weight: 400;
+    }
+
+    .lang-icon {
+        width: 19px;
+        height: 19px;
+        color: #fff;
+    }
+    
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 32px;
+        border-top: 1px solid #2e4e73;
+
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        &__info {
+            display: flex;
+        }
+
+        &__link {
+            color: variables.$text-color-light;
+            text-decoration: none;
+            transition: color .3s;
+
+            &:hover {
+                color: variables.$secondary-color-accent;
+            }
+        }
+
+        &__span {
+            display: none;
+			height: 1px;
+			width: 100%;
+			background: #2e4e73;
+        }
+
+
+        .language-switcher {
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                .lang-select__current{
+                    color: variables.$secondary-color-accent;
+                }
+
+                .lang-icon{
+                    color: variables.$secondary-color-accent;
+                }
+
+                .arw-down{ 
+                    color: variables.$secondary-color-accent;
+                }
+            }
+
+            .lang-select {
+                position: relative;
+                cursor: pointer;
+                user-select: none;
+
+                &__current {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 6px;
+                    background: transparent;
+
+                    .icon-arrow {
+                        transition: transform 0.3s ease;
+                    }
+                }
+
+                &__list {
+                    position: absolute;
+                    top: -280%;
+                    left: 0;
+                    margin: 0;
+                    padding: 10px;
+                    list-style: none;
+                    background: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                    
+                    // Початковий стан (прихований)
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(-10px);
+                    transition: all 0.3s ease;
+                    z-index: 10;
+                }
+
+                &__item {
+                    padding: 6px;
+                    transition: color 0.2s;
+                    color: variables.$color-dark;
+
+                    &:hover {
+                        color: variables.$secondary-color-accent;
+                    }
+                }
+
+                &.is-active {
+                    .lang-select__list {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0);
+                    }
+
+                    .arw-down {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    &-social {
+        display: flex;
+        align-items: baseline;
+        gap: 32px;
+    }
 }
+
+
+
+
+
+
+
+
+
+

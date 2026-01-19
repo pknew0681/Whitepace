@@ -37,10 +37,6 @@
 			padding: 5px 0;
 			gap: 10px;
 			
-			svg{
-				width: 29px;
-				height: 24px;
-			}
 
 			&:hover{
 				transition: 3s;
@@ -53,7 +49,7 @@
 				}
 
 				.arw-down{
-					color:#FFE492;
+					color: variables.$secondary-color-accent;
 				}
 
 				.menu-dropdown {
@@ -121,9 +117,6 @@
 		display: flex;
 	}
 	
-	.arw-down{
-		color:#ffffff;
-	}
 
 	.btn-burger{
 		display: none;
