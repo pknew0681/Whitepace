@@ -1,15 +1,57 @@
 @use "variables";
 
 
-.example {
-    text-align: center;
-    color: variables.$text-color-dark;
+.first-screen{
+    position: relative;
+    background-color: variables.$primary-color-dark;
+    overflow-y: hidden;
 
-    figure {
-        margin: 48px auto 24px;
-        width: 100%;
-        max-width: 280px;
-        background: variables.$bg-color;
-        padding: 12px;
+    & > .container {
+        position: relative;;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: none;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        z-index: 1;
     }
+
+    &-content{
+        
+         &__title {
+            margin-bottom: 24px;
+            color: #fff;
+        }
+    }
+
+    &__description {
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+    &__img{
+        z-index: 1;
+    }
+
+    .btn{
+        z-index: 1;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2652px;
+        height: 601px;
+        background-image: url("./assets/img/fs-stroke-bg.svg");
+        transform: translate(-45%, -50%);
+    }
+   
 }
+
+
+
+
+

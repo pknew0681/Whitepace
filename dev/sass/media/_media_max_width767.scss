@@ -19,6 +19,23 @@
         }
     }
 
+    .first-screen{
+        &-content{
+            &__title{
+                font-size: 36px;
+            }
+        }
+
+        & > .container{
+            padding: 80px 16px;
+        }
+
+        &::before{
+            background-image: url("./assets/img/fs-stroke-sm.svg");
+            transform: translate(-22%, -85%);
+        }
+    }
+
     .footer{
         &-row, &-col, &-nav{
             align-items: center;

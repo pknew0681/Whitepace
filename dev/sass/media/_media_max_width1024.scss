@@ -1,6 +1,35 @@
 @use "../../sass/variables";
 
 @media screen and (max-width: 1024px) {
+
+    .first-screen{
+        & > .container{
+            flex-direction: column;
+            text-align: center;
+            padding: 140px 20px 100px;
+        }
+
+        &-content{
+            &__title{
+                font-size: 54px;
+            }
+        }
+
+        .btn {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 30px;
+            margin-bottom: 100px;
+        }
+
+        &::before{
+            background-image: url("./assets/img/fs-stroke-md.svg");
+            transform: translate(-30%, -81%);
+        }
+    }
+
+
+
     .footer{
         &-row {
             flex-direction: column;
