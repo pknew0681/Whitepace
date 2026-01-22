@@ -19,6 +19,46 @@
 
     }
 
+    .management{
+        &-title,&-work-title{
+            font-size: 36px;
+        }
+
+        .management-content{
+            .management-title{
+                max-width: 288px;
+                &::before{
+                    left: -40%;
+                    width: 169px;
+                    height: 210px;
+                    background-image: url("./assets/img/management-bkg-s.svg");
+                }
+            }
+
+            .management-title__line {
+                top: 3px;
+                left: 51px;
+            }
+
+            .btn.btn-primary.btn-arrow {
+                font-size: 18px;
+            }
+        }
+
+        &-work{
+            &-title__line {
+                right: -90px;
+                top: -40px;
+            }
+
+            &-content{
+                .btn.btn-primary.btn-arrow {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
     .footer{
         &-logo{
             img{

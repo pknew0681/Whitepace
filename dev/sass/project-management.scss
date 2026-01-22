@@ -1,0 +1,100 @@
+.management{
+    overflow-x: hidden;
+    & > .container{
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+
+    &-content{
+        max-width: 672px;
+
+        .btn{
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &-title{
+        position: relative;
+        margin-bottom: 24px;
+        z-index: 2;
+
+        &::before{
+            position: absolute;
+            content: "";
+            top: 35%;
+            left: -50%;
+            width: 603px;
+            height: 449px;
+            background-image: url(./assets/img/management-bkg.svg);
+            z-index: -1;
+        }
+
+        &__line{
+            position: absolute;
+            top: 75px;
+            left: 0;
+            max-width: 680px;
+            z-index: -1;
+            width: 100%;
+        }
+    }
+
+    &-description {
+        position: relative;
+        color: #212529;
+        font-size: 18px;
+        font-family: "Inter", sans-serif;
+        margin-bottom: 60px;
+        z-index: 2;
+    }
+
+    &-info {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 100px;
+        z-index: 1;
+    }
+
+    &-work {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+
+        &-title{
+            position: relative;
+            &__line{
+                position: absolute;
+                bottom: -55px;
+                right: 55px;
+                max-width: 425px;
+                z-index: -1;
+                width: 100%;
+            }
+        }
+    }
+
+    &-work-title {
+        margin-bottom: 24px;
+    }
+
+    &-work-description {
+        font-family: "Inter",sans-serif;
+        color: #212529;
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+    &-work-content {
+        max-width: 670px;
+    }
+}
+
+
+
+
+
+

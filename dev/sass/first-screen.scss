@@ -4,7 +4,7 @@
 .first-screen{
     position: relative;
     background-color: variables.$primary-color-dark;
-    overflow-y: hidden;
+    overflow-x: hidden;
 
     & > .container {
         position: relative;;

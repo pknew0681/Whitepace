@@ -36,6 +36,31 @@
         }
     }
 
+    .management{
+        &-title,&-work-title{
+            font-size: 54px;
+        }         
+
+        .management-content{
+            .management-title{
+                &::before{
+                    left: -55%;
+                }
+            }
+            .management-title__line {
+                top: -25px;
+                left: 190px;
+            }
+        }
+
+        &-work{
+            &-title__line {
+                right: -135px;
+                top: -23px;
+            }
+        }
+    }
+
     .footer{
         &-row, &-col, &-nav{
             align-items: center;

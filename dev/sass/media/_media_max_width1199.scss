@@ -73,4 +73,17 @@
             margin-left: 20px;
         }
     }
+
+    .management{
+        &-title{
+            &::before{
+                top: -35%;
+                left: -30%;
+                width: 357px;
+                height: 271px;
+                background-image: url("./assets/img/management-bkg-m.svg");
+                transform: rotate(-20deg);
+            }
+        }
+    }
 }
