@@ -1,0 +1,43 @@
+@use "variables";
+
+.extension{
+    position: relative;
+    background-color: variables.$primary-color-dark;
+    z-index: -2;
+    
+
+    & > .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 90px;
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+
+    &-content {
+        max-width: 697px;
+        overflow-x: hidden;
+
+        .extension-title {
+            position: relative;
+            color: variables.$text-color-light;
+            margin-bottom: 24px;
+
+            &__line{
+                position: absolute;
+                max-width: 410px;
+                width: 100%;
+                top: -10px;
+                left: 300px;
+                z-index: -1;
+            }
+        }
+
+        .extension-description {
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+    }
+
+}

@@ -109,6 +109,14 @@
 			display: none;
 			align-items: center;
 			gap: 24px;
+			
+			.btn.btn-primary.btn-arrow{
+				padding: 18px 24px;
+			}
+
+			.btn.btn-secondary{
+				padding: 18px 40px;
+			}
 		}
 	}
 

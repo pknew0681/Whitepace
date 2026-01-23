@@ -86,4 +86,18 @@
             }
         }
     }
+
+    .extension{
+        &-content {
+            max-width: 528px;
+
+            .extension-title{
+                font-size: 64px;
+                 &__line{
+                    top: 63px;
+                    left: 27px;
+                }
+            }
+        }
+    }
 }

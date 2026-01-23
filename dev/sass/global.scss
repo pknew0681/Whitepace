@@ -70,6 +70,7 @@ h6 {
     font-weight: 800;
     color: variables.$text-color-dark;
     margin-bottom: 1em;
+    font-family: 'Inter', sans-serif;
 }
 
 h1 {
@@ -109,7 +110,7 @@ p {
     display: inline-block;
     border: none;
     border-radius: 8px;
-    padding: 16px 24px;
+    padding: 20px 40px;
     background: transparent;
     color: variables.$text-color-light;
     font-family: 'Inter', sans-serif;

@@ -59,6 +59,28 @@
         }
     }
 
+    .extension{
+        & > .container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        &-content{
+            .extension-title {
+                font-size: 36px;
+
+                &__line {
+                    top: 0px;
+                    left: 82px;
+                }
+            }
+
+            .btn.btn-primary.btn-arrow{
+                font-size: 18px;
+            }
+        }
+    }
+
     .footer{
         &-logo{
             img{
