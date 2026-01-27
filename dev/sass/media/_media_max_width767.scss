@@ -61,6 +61,19 @@
         }
     }
 
+    .customise{
+        & > .container{
+            .customise-content{
+                .customise-title{
+                    .customise-title__line{
+                        top: -25px;
+                        left: 255px;
+                    }
+                }
+            }
+        }
+    }
+
     .footer{
         &-row, &-col, &-nav{
             align-items: center;

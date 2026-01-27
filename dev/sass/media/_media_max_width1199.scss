@@ -100,4 +100,25 @@
             }
         }
     }
+
+    .customise{
+        & > .container{
+            
+            .customise-img {
+                min-width: 465px;
+            }
+
+            .customise-content{
+                max-width: 494px;
+
+                .customise-title{
+                    font-size: 64px;
+                    .customise-title__line{
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -126,6 +126,34 @@
         }
     }
 
+    .customise{
+        & > .container{
+            flex-direction: column;
+            overflow-x: hidden;
+
+            .customise-img {
+                min-width: 534px;
+            }
+
+            .customise-content{
+                max-width: 728px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .customise-title{
+                    font-size: 54px;
+                    .customise-title__line{
+                        max-width: 400px;
+                        top: -25px;
+                        left: 500px;
+                    }
+                }
+            }
+        }
+    }
+
     .footer{
         &-row {
             flex-direction: column;

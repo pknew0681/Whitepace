@@ -1,0 +1,42 @@
+.customise{
+    & > .container {
+        display: flex;
+        align-items: center;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        gap: 98px;
+    }
+
+
+    &-content {
+        max-width: 669px;
+
+        .customise-title {
+            position: relative;
+            margin-bottom: 24px;
+
+            &__line{
+                position: absolute;
+                max-width: 669px;
+                width: 100%;
+                top: 70px;
+                left: -10px;
+                z-index: -1;
+            }
+        }
+
+        .customise-description {
+            color: #212529;
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+
+
+
+
+
+
+

@@ -21,5 +21,25 @@
             max-width: 597px;
         }
     }
+
+    .customise{
+        & > .container{
+            gap: 60px;
+
+            .customise-img {
+                min-width: 550px;
+            }
+
+            .customise-content{
+                max-width: 646px;
+
+                .customise-title{
+                    .customise-title__line{
+                        max-width: 490px;
+                    }
+                }
+            }
+        }
+    }
 }
 
