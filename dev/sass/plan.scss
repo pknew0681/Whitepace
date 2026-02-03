@@ -1,0 +1,173 @@
+@use "variables";
+
+.plan{
+    &>.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        text-align: center;
+
+        .plan-content {
+            max-width: 980px;
+            width: 100%;
+            margin-bottom: 60px;
+
+            .plan-title {
+                position: relative;
+                margin-bottom: 24px;
+
+                &__line {
+                    position: absolute;
+                    top: -10px;
+                    right: -15px;
+                    max-width: 550px;
+                    width: 100%;
+                    z-index: -1;
+                }
+            }
+
+            .plan-description {
+                color: variables.$text-color-dark;
+                font-size: 18px;
+                padding: 0;
+            }
+        }
+
+        .plan-price {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            padding: 40px 44px;
+            border: 1px solid #ffe492;
+            border-radius: inherit;
+            max-width: 472px;
+            width: 100%;
+
+            &__head {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 25px;
+                width: 100%;
+            }
+
+            &__name {
+                color: variables.$text-color-dark;
+                font-size: 24px;
+                font-family: "Inter",sans-serif;
+                margin: 0;
+            }
+
+            &__price {
+                margin: 0;
+            }
+
+            &__description {
+                color: variables.$text-color-dark;
+                font-size: 18px;
+                margin: 0;
+            }
+
+            &__points {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 28px;
+            }
+
+            &__svg {
+                color: variables.$text-color-dark;
+                width: 20px;
+                min-width: 20px;
+                height: 20px;
+                margin-right: 19px;
+            }
+
+            &__point {
+                display: flex;
+                align-items: center;
+                color: variables.$text-color-dark;
+                text-align: start;
+            }
+
+            &__btn {
+                margin-right: auto;
+                border: 1px solid #ffe492;
+                border-radius: 8px;
+                padding: 16px 40px;
+                color: variables.$text-color-dark;
+                font-size: 16px;
+            }
+        }
+
+        .swiper{
+            max-width: 1482px;
+            width: 100%;
+        }
+
+        .swiper-plan{
+            padding-bottom: 90px;
+        }
+
+        .swiper-wrapper{
+            display: flex;
+            align-items: center;
+        }
+
+        .swiper-slide {
+            max-width: 472px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden; 
+            transform: translate3d(0, 0, 0);
+        }
+
+        .swiper-slide-active{
+            .plan-price{
+                isolation: isolate;
+                background-color: variables.$primary-color-dark;
+                padding: 80px 44px;  
+                transform: scaleY(1.05);
+                border: none;
+                
+
+                &__name,&__description,&__point {
+                    color: variables.$text-color-light;
+                }
+
+                &__price,&__svg {
+                    color: variables.$secondary-color-accent;
+                }
+
+                &__btn{
+                    border: none;
+                    background-color: variables.$primary-color-light;
+                    color: variables.$text-color-light;
+                    transition: opacity .3;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+
+            }
+        }
+
+        .swiper-pagination{
+            &-bullet{
+                background: variables.$primary-color-light;
+                opacity: 1;
+                &-active{
+                    background: variables.$primary-color-dark;
+                }
+            }
+        }
+
+    }
+}
+

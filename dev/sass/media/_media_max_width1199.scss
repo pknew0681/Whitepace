@@ -121,4 +121,16 @@
         }
     }
 
+    .plan{
+        &>.container {
+            .plan-content {
+                .plan-title {
+                    font-size: 64px;
+                    &__line {
+                        top: -20px;
+                    }
+                }
+            }
+        }
+    }
 }

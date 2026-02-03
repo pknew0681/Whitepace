@@ -41,5 +41,16 @@
             }
         }
     }
+
+    .plan{
+        & > .container{
+            .swiper-slide {
+                max-width: 438px;
+            }
+            .plan-price{
+                max-width: 438px;
+            }
+        }
+    }
 }
 

@@ -110,6 +110,35 @@
         }
     }
 
+    .plan{
+        &>.container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            .plan-content {
+                max-width: 288px;
+
+                .plan-title {
+                    font-size: 36px;
+                    &__line {
+                        top: 0px;
+                        right: 10px;
+                        max-width: 200px;
+                    }
+                }
+            }
+
+            .swiper-slide,.swiper-slide-active{
+                .plan-price {
+                    padding: 20px;
+                    
+                     &__btn{
+                        font-size: 18px;
+                     }
+                }
+            }
+        }
+    }
+
     .footer{
         &-logo{
             img{

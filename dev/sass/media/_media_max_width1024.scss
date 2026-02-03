@@ -154,6 +154,33 @@
         }
     }
 
+    .plan{
+        &>.container {
+            .plan-content {
+                .plan-title {
+                    font-size: 54px;
+                    &__line {
+                        top: -30px;
+                        right: -10px;
+                        max-width: 430px;
+                    }
+                }
+            }
+
+
+            .swiper-slide,.swiper-slide-active{
+                .plan-price {
+                    max-width: 471px;
+                    transform: none;
+                    &__description,&__point  {
+                        font-size: 16px;
+                    }
+                }
+            }
+            
+        }
+    }
+
     .footer{
         &-row {
             flex-direction: column;
