@@ -108,10 +108,6 @@
     .work-everywhere{
         &-content{
             max-width: 530px;
-
-            &::before{
-                display: none;
-            }
         }
 
         &__title{

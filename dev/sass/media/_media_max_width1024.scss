@@ -182,13 +182,13 @@
     }
 
     .work-everywhere{
+        &::before{
+            top: -50px;
+            left: -390px;
+        }
+
         &-content{
             max-width: 604px;
-
-            &::before{
-                top: -230px;
-                left: -350px;
-            }
 
             & > button{
                 font-size: 16px;
