@@ -39,6 +39,7 @@
             max-width: 680px;
             z-index: -1;
             width: 100%;
+            color: variables.$secondary-color-accent;
         }
     }
 
@@ -75,6 +76,7 @@
                 max-width: 425px;
                 z-index: -1;
                 width: 100%;
+                color: variables.$secondary-color-accent;
             }
         }
     }

@@ -181,6 +181,35 @@
         }
     }
 
+    .work-everywhere{
+        &-content{
+            max-width: 604px;
+
+            &::before{
+                top: -230px;
+                left: -350px;
+            }
+
+            & > button{
+                font-size: 16px;
+            }
+        }
+
+        &__title{
+            font-size: 54px;
+
+            &-line{
+                top: 40px;
+                right: 310px;
+                max-width: 300px;
+            }
+        }
+
+        &__description{
+            text-align:start;
+        }
+    }
+
     .footer{
         &-row {
             flex-direction: column;

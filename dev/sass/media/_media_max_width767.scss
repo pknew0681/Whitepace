@@ -1,6 +1,11 @@
 @use "../../sass/variables";
 
 @media screen and (max-width: 767px) {
+
+    .container{
+        padding: 0 20px ;
+    }
+
     .header{
         .header-buttons{
             display: none;
@@ -96,6 +101,22 @@
                 max-width: 472px;
                 margin-left: auto;
                 margin-right: auto;
+            }
+        }
+    }
+
+    .work-everywhere{
+        &-content{
+            max-width: 530px;
+
+            &::before{
+                display: none;
+            }
+        }
+
+        &__title{
+            &-line{
+                right: -80px;
             }
         }
     }

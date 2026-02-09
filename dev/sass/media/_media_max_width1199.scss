@@ -133,4 +133,21 @@
             }
         }
     }
+
+    .work-everywhere{
+        &-content{
+            align-items: flex-start;
+            max-width: 650px;
+            margin: 0;
+        }
+
+        &__title{
+            font-size: 64px;
+
+            &-line{
+                top: 60px;
+                right: -100px;
+            }
+        }
+    }
 }
