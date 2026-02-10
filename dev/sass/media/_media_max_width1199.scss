@@ -150,4 +150,18 @@
             }
         }
     }
+
+    .your-data{
+        &-text {
+            max-width: 526px;
+        }
+
+        &-title {
+            font-size: 64px;
+
+            &__line{
+                top: -15px;
+            }
+        }
+    }
 }

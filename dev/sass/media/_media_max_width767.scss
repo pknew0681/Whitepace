@@ -117,6 +117,13 @@
         }
     }
 
+    .your-data{
+        & > .container{
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+
     .footer{
         &-row, &-col, &-nav{
             align-items: center;
