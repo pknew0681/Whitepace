@@ -192,6 +192,18 @@
         }
     }
 
+    .sponsors{
+        &-title {
+            font-size: 36px;
+
+            &__line {    
+                top: -40px;
+                right: -75px;
+                max-width: 300px;
+            }
+        }
+    }
+
     .footer{
         &-logo{
             img{

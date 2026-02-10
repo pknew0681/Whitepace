@@ -164,4 +164,15 @@
             }
         }
     }
+
+    .sponsors{
+        &-title {
+            font-size: 64px;
+
+            &__line {
+                top: -17px;
+                right: -130px;
+            }
+        }  
+    }
 }

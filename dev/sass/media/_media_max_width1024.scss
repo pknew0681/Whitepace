@@ -244,6 +244,24 @@
         }
     }
 
+    .sponsors{
+        &-title {
+            font-size: 54px;
+
+            &__line {    
+                top: -25px;
+                right: -120px;
+            }
+        }
+
+        &-list {
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+        }    
+    }
+
+
     .footer{
         &-row {
             flex-direction: column;
