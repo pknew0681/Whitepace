@@ -175,4 +175,14 @@
             }
         }  
     }
+
+    .favourite-apps{
+        &-title{
+            font-size: 64px;
+        }
+
+        &-text{
+            max-width: 460px;
+        }
+    }
 }

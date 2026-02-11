@@ -204,6 +204,16 @@
         }
     }
 
+    .favourite-apps{
+        &::after{
+            transform: translate(-40%, -25%) rotate(20deg);
+        }
+
+        &-title{
+            font-size: 36px;
+        }
+    }
+
     .footer{
         &-logo{
             img{
