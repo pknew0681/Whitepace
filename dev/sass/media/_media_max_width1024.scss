@@ -287,6 +287,22 @@
         }
     }
 
+    .clients-say{
+        &-title{
+            font-size: 54px;
+
+            &__line{
+                bottom: -45px;
+                right: -110px;
+                max-width: 250px;
+            }
+        }
+
+        .swiper-slide,.swiper-slide-active,.clients-say-comment{
+            max-width: 340px;
+        }
+    }
+
 
     .footer{
         &-row {

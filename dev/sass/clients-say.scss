@@ -1,0 +1,145 @@
+@use 'variables';
+
+.clients-say{
+
+    &-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title{
+        position: relative;
+        text-align: center;
+        margin-bottom: 60px;
+
+        &__line{
+            position: absolute;
+            bottom: -30px;
+            right: -160px;
+            max-width: 350px;
+            width: 100%;
+            color: variables.$secondary-color-accent;
+            z-index: -1;
+        }
+    }
+
+    &-comment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 40px;
+        border: none;
+        border-radius: 10px;
+        background-color: variables.$primary-color-light;
+
+        &-text-wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-bottom: 1px solid variables.$text-color-light;
+            margin-bottom: 60px;
+        }
+
+        &__decorative-icon{
+            width: 86px;
+            height: 62px;
+            margin-bottom: 32px;
+        }
+
+        &__text{
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        &-user {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            &__avatar {
+                margin-right: 42px;
+                border-radius: 50%; 
+                width: 95px;
+                height: 95px;
+                object-fit: cover;
+            }
+
+            &__name {
+                font-size: 24px;
+                color: variables.$primary-color-dark;
+                font-weight: 600;
+                margin-bottom: 15px;
+                padding: 0;
+            }
+
+            &__position {
+                margin: 0;
+            }
+        }
+    }
+    
+    .swiper{
+        max-width: 1482px;
+        width: 100%;
+    }
+
+    .swiper-wrapper{
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .swiper-slide {
+        max-width: 472px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden; 
+        transform: translate3d(0, 0, 0);
+    }
+
+    .swiper-slide-active{
+        box-shadow: 15px 10px 15px 10px rgba(0, 0, 0, 0.1);
+
+        .clients-say-comment{
+            background-color: variables.$bg-color;
+            
+
+            &-text-wrapper{
+                border-color: variables.$color-dark;
+            }
+
+            &__decorative-icon{
+                content: url('./assets/img/clients-say-dec-active.svg');
+            }
+
+            &__text{
+                color: variables.$text-color-dark;
+            }
+
+            &-user {
+                &__name,&__position {
+                    color: variables.$text-color-dark;
+                }
+            }
+        }
+    }
+
+    .clients-say-pagination{
+        text-align: center;
+        margin-top: 45px;
+
+        .swiper-pagination-bullet{
+            width: 12px;
+            height: 12px;
+            margin: 0 6px !important;
+            background: variables.$primary-color-light;
+            opacity: 1;
+            &-active{
+                background: variables.$primary-color-dark;
+            }
+        }
+    }
+
+}

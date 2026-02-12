@@ -185,4 +185,14 @@
             max-width: 460px;
         }
     }
+
+    .clients-say{
+        &-comment{
+            &-user {
+                &__avatar {
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
 }
