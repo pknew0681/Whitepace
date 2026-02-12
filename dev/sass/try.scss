@@ -1,0 +1,57 @@
+@use "variables";
+
+.try{
+    background-color: variables.$primary-color-dark;
+
+    & >.container{
+        padding-bottom: 32px;
+    }
+
+    &-content {
+        max-width: 608px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+
+        &__title {
+            color: white;
+            margin-bottom: 24px;
+        }
+
+        &__description {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        & > button {
+            margin-bottom: 40px;
+        }
+
+        &__link {
+            font-size: 24px;
+            margin-bottom: 40px;
+
+            & > a {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        &-icons {
+            max-width: 260px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & > img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}

@@ -166,6 +166,23 @@
         }
     }
 
+    .try{
+        &-content {
+            margin: 0;
+            margin-right: auto;
+            align-items: flex-start;
+            text-align: start;
+
+            &__title {
+                font-size: 54px;
+            }
+
+            &__description {
+                max-width: 550px;
+            }
+        }
+    }
+
     .footer{
         &-row, &-col, &-nav{
             align-items: center;

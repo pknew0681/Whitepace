@@ -276,6 +276,39 @@
         }
     }
 
+    .try{
+        & > .container{
+            padding-top: 100px;
+        }
+
+        &-content {
+            &__title {
+                font-size: 36px;
+            }
+
+            &__description {
+                font-size: 18px;
+                max-width: 288px;
+            }
+
+            &__link {
+                font-size: 18px;
+            }
+
+            & > button {
+                font-size: 16px;
+            }
+
+            &-icons {
+                max-width: 185px;
+                & > img {
+                    width: 35px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+
     .footer{
         &-logo{
             img{

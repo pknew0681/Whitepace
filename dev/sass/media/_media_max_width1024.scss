@@ -303,6 +303,13 @@
         }
     }
 
+    .try{
+        &-content {
+            &__title {
+                font-size: 64px;
+            }
+        }
+    }
 
     .footer{
         &-row {
